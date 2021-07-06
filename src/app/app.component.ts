@@ -33,13 +33,5 @@ export class AppComponent {
   rooms$ = this.appState.rooms$;
   countStudents$ = this.appState.countStudent$;
 
-  constructor(readonly appState: AppStateService) {
-    // this.rooms$.subscribe((room) => {
-    //   console.log("change", room);
-    // });
-  }
-
-  addStudentToRoom(student: Student, room: Room) {
-    console.log(student, room);
-  }
+  constructor(readonly appState: AppStateService) {}
 }
